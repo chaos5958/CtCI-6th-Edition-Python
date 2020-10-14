@@ -1,15 +1,13 @@
-# O(N)
 import unittest
 
 
 def is_substring(string, sub):
     return string.find(sub) != -1
 
-def string_rotation(s1, s2):
-    if len(s1) == len(s2) != 0:
-        return is_substring(s1 + s1, s2)
+def string_rotation(str1, str2):
+    if len(str1) == len(str2) != 0:
+        return is_substring(str1 + str1, str2)
     return False
-
 
 class Test(unittest.TestCase):
     '''Test Cases'''
